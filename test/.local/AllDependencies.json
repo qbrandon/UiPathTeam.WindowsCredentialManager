@@ -1,0 +1,89 @@
+{
+  "version": 3,
+  "targets": {
+    ".NETFramework,Version=v4.6.1": {
+      "CredentialManagement/1.0.2": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "CredentialManagement"
+        ],
+        "compile": {
+          "lib/net35/_._": {}
+        },
+        "runtime": {
+          "lib/net35/CredentialManagement.dll": {}
+        }
+      },
+      "UiPathTeam.WindowsCredentialManager.Activities/1.0.3": {
+        "type": "package",
+        "dependencies": {
+          "CredentialManagement": "1.0.2"
+        },
+        "compile": {
+          "lib/net45/_._": {}
+        },
+        "runtime": {
+          "lib/net45/UiPathTeam.WindowsCredentialManager.Activities.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "CredentialManagement/1.0.2": {
+      "sha512": "VkP04/jFXaxT3TkcRhzETYtOrznQxRmQ2J1XJdbXz47Bir7hIzPR7mFZk4GJQ4An4gozW+vonpf+iqTHomAkQw==",
+      "type": "package",
+      "path": "credentialmanagement/1.0.2",
+      "files": [
+        ".nupkg.metadata",
+        "credentialmanagement.1.0.2.nupkg.sha512",
+        "credentialmanagement.nuspec",
+        "lib/net35/CredentialManagement.dll"
+      ]
+    },
+    "UiPathTeam.WindowsCredentialManager.Activities/1.0.3": {
+      "sha512": "zBFYm64Mw0WDrFFzSsWSntfgKPoMeFLd7zor7KzNVi4YEm0/v5YrRhwQKcerKwLdk91ReqIM7Zfz4DtGVDcWlw==",
+      "type": "package",
+      "path": "uipathteam.windowscredentialmanager.activities/1.0.3",
+      "files": [
+        ".nupkg.metadata",
+        "lib/net45/.settings/Release/settings-1a5b880a.json",
+        "lib/net45/.settings/Release/settings-5190454b.json",
+        "lib/net45/.settings/Release/settings-590bb27b.json",
+        "lib/net45/.settings/Release/settings-9e9290da.json",
+        "lib/net45/UiPathTeam.WindowsCredentialManager.Activities.dll",
+        "lib/net45/project.json",
+        "uipathteam.windowscredentialmanager.activities.1.0.3.nupkg.sha512",
+        "uipathteam.windowscredentialmanager.activities.nuspec"
+      ]
+    }
+  },
+  "projectFileDependencyGroups": {
+    "": [],
+    ".NETFramework,Version=v4.6.1": [
+      "UiPathTeam.WindowsCredentialManager.Activities >= 1.0.3 <= 1.0.3"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\quentin.brandon\\.nuget\\packages\\": {}
+  },
+  "project": {
+    "restore": {
+      "projectUniqueName": "test",
+      "projectName": "test",
+      "projectPath": "C:\\Users\\quentin.brandon\\Development\\Components\\WindowsCredentialManager\\test\\.local",
+      "packagesPath": "C:\\Users\\quentin.brandon\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\quentin.brandon\\Development\\Components\\WindowsCredentialManager\\test\\.local"
+    },
+    "frameworks": {
+      "net461": {
+        "dependencies": {
+          "UiPathTeam.WindowsCredentialManager.Activities": {
+            "include": "Runtime",
+            "target": "Package",
+            "version": "[1.0.3, 1.0.3]"
+          }
+        }
+      }
+    }
+  }
+}
